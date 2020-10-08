@@ -1,0 +1,27 @@
+{
+  "name": "vef1-2020-v6",
+  "version": "1.0.0",
+  "description": "Nú er eigandi _Bókabúðarinnar_ kátur með útlitið en hefur áhyggjur af viðhaldi á vefnum.",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.26.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "browser-sync": "browser-sync start --server",
+    "sass": "node-sass --source-map-embed styles.scss styles.css",
+    "sass-watch": "node-sass --source-map-embed --watch *.scss --recursive styles.css",
+    "dev": "concurrently npm:sass-watch npm:browser-sync"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arnar-Sig/Verkefni6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arnar-Sig/Verkefni6/issues"
+  },
+  "homepage": "https://github.com/Arnar-Sig/Verkefni6#readme"
+}
