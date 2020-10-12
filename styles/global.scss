@@ -28,17 +28,17 @@ button {
     color 300ms ease-in-out,
     background-color 300ms ease-in-out;
   word-break: initial;
-}
 
-button:hover {
-  background-color: #eee;
-  color: #222;
-}
+  &:hover {
+    background-color: #eee;
+    color: #222;
+  }
 
-button:active {
-  background-color: #222;
-  border: 1px solid #000;
-  color: #eee;
+  &:active {
+    background-color: #222;
+    border: 1px solid #000;
+    color: #eee;
+  }
 }
 
 h1,

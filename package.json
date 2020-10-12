@@ -4,21 +4,23 @@
   "description": "Nú er eigandi _Bókabúðarinnar_ kátur með útlitið en hefur áhyggjur af viðhaldi á vefnum.",
   "main": "index.js",
   "dependencies": {
-    "browser-sync": "^2.26.12",
     "concurrently": "^5.3.0",
     "node-sass": "^4.14.1",
     "sass": "^1.27.0",
     "stylelint": "^13.7.2",
     "stylelint-config-sass-guidelines": "^7.1.0",
-    "stylelint-config-standard": "^20.0.0"
+    "stylelint-config-standard": "^20.0.0",
+    "browser-sync": "^2.26.12"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.12"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "browser-sync": "browser-sync start --server",
+    "browser-sync": "browser-sync start --server --files index.html styles.css",
     "sass": "node-sass styles.scss styles.css",
     "sass-watch": "node-sass --source-map-embed --watch *.scss --recursive styles.css",
-    "dev": "concurrently npm:sass-watch npm:browser-sync",
+    "dev": "concurrently npm:sass-watch npm:browser-sync start --server --files index.html styles.css",
     "sass-nomap": "node-sass styles.scss styles.css",
     "lint": "stylelint styles.scss ./**/*.scss"
   },
