@@ -2,31 +2,31 @@
 @import './config';
 // Allir stílar fyrir bækur
 .books {
-  margin-bottom: 2rem;
+  margin-bottom: $font-size * 2;
 
   .col {
-    margin-bottom: 2rem;
+    margin-bottom: $font-size * 2;
   }
 }
 
 .book {
-  background-color: #ccc;
+  background-color: $ljosgrar;
   display: flex;
   flex-direction: column;
   height: 100%;
-  margin-bottom: 2rem;
-  margin-right: 1rem;
+  margin-bottom: $font-size * 2;
+  margin-right: $font-size;
   min-width: 160px;
   width: 100%;
 
   > .content {
-    border: 1px solid #999;
+    border: 1px solid $grar;
     border-top: 0;
     display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0.5rem;
+    padding: $font-size * 0.5;
   }
 
   .image {
@@ -46,14 +46,14 @@
   }
 
   .book h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: $font-size * 1.5;
+    margin-bottom: $font-size;
   }
 
   .book h4 {
-    font-size: 0.875rem;
+    font-size: $font-size * 0.875;  //var 0.875rem
     font-weight: normal;
-    margin-bottom: 1rem;
+    margin-bottom: $font-size;
     text-transform: uppercase;
   }
 
@@ -61,10 +61,10 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-right: 0.5rem;
+    margin-right: $font-size * 0.5;
   }
 
   .book .price {
-    margin-right: 0.5rem;
+    margin-right: $font-size * 0.5;
   }
 }

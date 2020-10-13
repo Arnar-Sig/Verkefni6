@@ -7,11 +7,11 @@ header {
   background-size: cover;
   display: flex;
   height: 100vh;
-  margin-bottom: 2rem;
+  margin-bottom: $font-size * 2;
   width: 100%;
 
   .content {
-    color: #eee;
+    color: $ljosgrarri;
     margin: auto;
     text-align: center;
     width: 100%;
