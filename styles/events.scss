@@ -43,7 +43,7 @@
     right: 0;
     top: 0;
     transform-style: preserve-3d;
-    transition: transform 300ms ease-in-out;
+    transition: $transition;
   }
 
   &:hover .card {
